@@ -3,10 +3,10 @@ import Input from './Components/input'
 import Output from './Components/output'
 
 const App = () => {
-  // Creating a username state that would be updated from the input component
+  //  Create a state variable called 'username' and its corresponding function 'setUsername'
   const[username, setUsername] = useState('')
 
-  // Updating username with the value of the input 
+  //Callback function that will be called when the input value changes
   const changeInput = (e) => {
     setUsername(e.target.value);
   };
@@ -14,7 +14,8 @@ const App = () => {
     <div className='Container bg-black w-screen h-screen m- p-2'>
         {/*Getting the username props from the username state */}
         <Output username={username} />
-        {/*Adding */}
+
+        {/*Pass the 'changeInput' callback function as a prop to the Input component */}
         <Input whenInputChange={changeInput} /> 
     </div>
   )
