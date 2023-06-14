@@ -1,1 +1,1 @@
-Creating input and output components that would be used in the App.jsx
+Creating input and output components, the output components would change in response to what is entered in the input field 
