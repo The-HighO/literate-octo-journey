@@ -1,12 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 *{
   padding: 0;
   margin: 0;
   font-family: 'Clash Display', sans-serif;
 }
 #root{
-  background-color: black;
+  /* background-color: black; */
   height: 100svh;
-  padding: 1rem;
 }
 h1{
   font-size: 1.2rem;
